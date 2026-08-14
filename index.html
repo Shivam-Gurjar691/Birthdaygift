@@ -347,11 +347,18 @@ footer{text-align:center;padding:20px;color:var(--muted);font-size:12.5px;}
   padding:12px 22px;z-index:500;pointer-events:none;
 }
 .brand-badge{
-  pointer-events:auto;display:flex;align-items:center;gap:8px;
-  background:rgba(255,255,255,.7);border:1px solid rgba(63,158,92,.22);border-radius:12px;
-  padding:6px 12px;box-shadow:0 8px 18px -10px rgba(31,92,52,.3);backdrop-filter:blur(6px);
+  pointer-events:auto;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  background:transparent;
+  border:none;
+  border-radius:0;
+  padding:0;
+  box-shadow:none;
+  backdrop-filter:none;
 }
-.brand-badge img{height:150px;width:auto;display:block;}
+.brand-badge img{height:95px;width:auto;display:block;}
 .brand-badge .brand-text{font-weight:700;font-size:12.5px;color:var(--primary-deep);line-height:1.15;}
 .brand-badge.wordmark{padding:9px 16px;}
 .brand-badge.wordmark .brand-text{font-size:15px;letter-spacing:.04em;font-weight:800;color:var(--primary-deep);}
@@ -359,7 +366,7 @@ footer{text-align:center;padding:20px;color:var(--muted);font-size:12.5px;}
 @media(max-width:640px){
   .brand-bar{padding:8px 10px;}
   .brand-badge img{height:45px;}
-  .brand-badge{padding:5px 9px;}
+  .brand-badge{padding:0;}
   .brand-badge .brand-text{font-size:10.5px;}
 }
 
